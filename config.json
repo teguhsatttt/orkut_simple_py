@@ -1,0 +1,49 @@
+{
+  "telegram": {
+    "bot_token": "PUT_YOUR_TELEGRAM_BOT_TOKEN",
+    "vip_chat_id": -1001234567890
+  },
+  "provider": {
+    "base_url": "https://restapi.rafatharcode.apibotwa.biz.id",
+    "paths": {
+      "create": "/api/orkut/createpayment",
+      "status": "/api/orkut/cekstatus"
+    },
+    "http_method": {
+      "create": "GET",
+      "status": "GET"
+    },
+    "merchant": "MERCHANT_KAMU",
+    "codeqr": "CODEQR_KAMU",
+    "auth": {
+      "mode": "none",
+      "username": "",
+      "password": ""
+    },
+    "key_param": "keyorkut",
+    "key_candidates": [
+      "keyorkut",
+      "order_id",
+      "transactionId",
+      "data.key",
+      "data.keyorkut"
+    ],
+    "qr_candidates": [
+      "qrcode",
+      "qr",
+      "data.qrcode"
+    ],
+    "success_markers": [
+      "paid",
+      "success",
+      "\"status\":\"success\""
+    ]
+  },
+  "pricing": {
+    "price_per_month": 20000
+  },
+  "order": {
+    "window_sec": 900,
+    "poll_interval_sec": 10
+  }
+}
